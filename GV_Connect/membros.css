@@ -1,0 +1,198 @@
+/* Reseta margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #000000;
+    position: relative;
+}
+
+/* Definindo a imagem de fundo e garantindo sua visibilidade */
+body {
+    background: white;
+    background-size: cover;
+    color: #000000;
+}
+
+/* Estilos para o Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0060a0;
+    color: #fff;
+    padding: 10px 20px;
+    height: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#logo {
+    width: 140px;
+    height: auto;
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #0077b5;
+}
+
+/* Estilos para a página de membros */
+.membros {
+    padding: 20px 5%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.membros-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.membro {
+    background-color: #0077b5;
+    border-radius: 30px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.membro:hover {
+    transform: translateY(-5px);
+}
+
+.membro img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.membro h2 {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.membro p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+/* Estilos para a caixa de motivação (nova seção) */
+.motivacao {
+    padding: 40px 5%;
+    background-color: #f0f4f8;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.motivacao-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.motivacao h3 {
+    font-size: 2rem;
+    color: #0077b5;
+    margin-bottom: 20px;
+}
+
+.motivacao p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Estilos do Footer */
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #0060a0;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+footer ul li a:hover {
+    color: #0077b5;
+}
+
+/* Estilo para o botão do WhatsApp */
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#whatsapp:hover {
+    background-color: #128C7E;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .motivacao {
+        padding: 20px 5%;
+    }
+}
